@@ -1,4 +1,4 @@
-html {
+  html {
   box-sizing: border-box;
 }
 
@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
   background-color: var(--color-white);
 }
 
@@ -20,6 +21,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
