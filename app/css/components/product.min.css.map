@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"product.min.css","sourcesContent":[]}
+{"version":3,"sources":["components/product.scss"],"names":[],"mappings":"AACE,cACE,WAAA,KACA,cAAA,MAAA,WAAA","file":"product.min.css","sourcesContent":[".product {\n  &__img {\n    max-height: 100%;\n    object-fit: cover;\n  }\n}"]}
