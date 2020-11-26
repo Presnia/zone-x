@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  height: 1080px;
   min-height: 700px;
   background-color: var(--quill-gray);
 
@@ -37,7 +38,7 @@
   &__image {
     position: absolute;
     max-height: 90%;
-    right: 280px;
+    right: 220px;
     top: 116px;
   }
 

@@ -1,0 +1,50 @@
+.banners {
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 33%;
+    flex-shrink: 0;
+
+    &:not(:first-child) {
+      margin-left: 0.5%;
+    }
+  }
+}
+
+.banners-article {
+  padding: 54px;
+  margin-left: 5px;
+  padding-right: 47%;
+  min-height: 290px;
+  background-repeat: no-repeat;
+
+  &__one {
+    background-color: #cfd1d0;
+    background-image: url('../../img/midseas.png');
+    background-position: 80% 0%;
+  }
+  
+  &__two {
+    background-image: url('../../img/summer.jpg');
+  }
+
+  &__three {
+    background-color: #eeeeec;
+    background-image: url('../../img/percents.png');
+    background-position: right;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    max-width: 220px;
+  }
+}

@@ -79,3 +79,26 @@ ul {
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.main-link {
+  position: relative;
+  font-size: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-dark);
+    transition: width 0.15s;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+      transition: width 0.15s;
+    }
+  }
+}

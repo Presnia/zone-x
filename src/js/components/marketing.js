@@ -43,7 +43,7 @@ const changeMarketingData = () => {
 
 changeMarketingData();
 
-setInterval(changeMarketingData, delay);
+// setInterval(changeMarketingData, delay);
 
 vars.$marketing.addEventListener('click', (e) => {
   if (e.target.classList.contains('marketing__close')) {
