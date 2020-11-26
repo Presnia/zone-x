@@ -60,3 +60,37 @@
       height: 100%;
     }
 }
+
+.banner-pag {
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+
+  .swiper-pagination-bullet {
+    margin: 0 12px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-white);
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    position: relative;
+    background-color: var(--color-dark);
+    opacity: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: var(--color-white);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+
+}
