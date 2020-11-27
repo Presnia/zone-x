@@ -14,6 +14,25 @@
     margin: 0 18px;
   }
 
+  &__btn-center {
+    text-align: center;
+    margin-top: 92px;
+  }
+
+  &__more {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    color: var(--color-gray);
+    font-size: 13px;
+
+    span {
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+  }
+
   &__btn {
     font-size: 24px;
 
@@ -28,9 +47,18 @@
 
 .products-grid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   &__item {
-    margin-right: 30px;
+    margin-right: 29px;
+    margin-bottom: 80px;
+
+    &:nth-child(5n) {
+      margin: 0;
+    }
+    
+    &:nth-last-child(-n+5) {
+      margin-bottom: 0;
+    }
   }
 }
