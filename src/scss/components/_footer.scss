@@ -2,12 +2,13 @@
   &__content {
     padding: 0 247px;
     padding-top: 99px;
-    padding-bottom: 99px;
+    padding-bottom: 0;
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 96px;
   }
 
   &__column {
@@ -22,9 +23,30 @@
     }
   }
 
+  &__list {
+    &--row {
+      display: flex;
+      align-items: center;
+
+      .footer__item {
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-right: 43px;
+        }
+      }
+    }
+  }
+
   &__link {
     font-size: 13px;
     color: var(--color-tundora);
+
+    &--row {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--color-dark);
+    }
   }
 
   &__title {
@@ -46,6 +68,19 @@
     font-size: 13px;
     font-weight: 500;
     color: var(--color-tundora);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-top: 1px solid #eee;
+    padding: 40px 0;
+  }
+
+  &__social {
+    height: 18px;
+    margin-right: 12px;
   }
 }
 
@@ -92,5 +127,42 @@
   &::placeholder {
     opacity: 0.2;
     color: var(--color-tundora);
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--tw {
+      background-image: url("../../img/twit.png");
+    }
+
+    &--fb {
+      background-image: url("../../img/fb.png");
+    }
+
+    &--in {
+      background-image: url("../../img/inst.png");
+    }
+
+    &--pin {
+      background-image: url("../../img/pinter.png");
+
+    }
   }
 }
