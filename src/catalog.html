@@ -18,8 +18,10 @@
 				<h2 class="visually-hidden">Catalog</h2>
 				@include('html/breadcrumbs.html')
 				<div class="catalog-content">
-					@include('html/catalog-filter.html')
-					@include('html/catalog-grid.html')
+					<div class="container container-narrow">
+            @include('html/catalog-filter.html')
+						@include('html/catalog-grid.html')
+					</div>
 				</div>
 			</section>
 		</main>
