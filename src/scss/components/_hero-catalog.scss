@@ -1,0 +1,62 @@
+.hero-catalog {
+    padding-top: 130px;
+
+  &__slider {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f8f8f8;
+    background-image: url("../../img/girl-catalog.png");
+    background-repeat: no-repeat;
+    background-position: 77%;
+  }
+}
+
+.catalog-slide {
+  padding: 105px 108px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 18px;
+    max-width: 375px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 41px;
+    max-width: 385px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--color-tundora);
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  &__link {
+    display: inline-block;
+
+    &--dark {
+      margin-right: 15px;
+      padding: 16px 44px;
+      border: 1px solid var(--color-dark);
+      color: var(--color-white);
+      background-color: var(--color-dark)
+    }
+
+    &--light {
+      padding: 16px 43px;
+      border: 1px solid var(--color-dark);
+      color: var(--color-dark);
+      background-color: transparent;
+    }
+  }
+
+  
+}
