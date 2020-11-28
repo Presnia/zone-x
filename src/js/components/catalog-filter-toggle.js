@@ -7,8 +7,8 @@ vars.$catalogFiltersTop.forEach(el => {
 });
 
 vars.$hideFilters.addEventListener('click', (e) => {
-    vars.$catalogFilters.forEach(el => {
-      el.classList.remove('catalog-filter--open');
+    vars.$catalogFiltersTop.forEach(el => {
+      el.closest('.catalog-filter').classList.remove('catalog-filter--open');
   });
 });
 
