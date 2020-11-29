@@ -212,7 +212,7 @@
 }
 
 .catalog-props {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   &__top {
     display: flex;
@@ -280,10 +280,11 @@ select {
   font-size: 0;
 
   &__item {
+    margin-right: 5px;
+    margin-bottom: 5px;
     border-radius: 12px;
     font-size: 13px;
     padding: 5px 14px;
-    margin-right: 5px;
     color: var(--color-tundora);
     background-color: #eee;
     transition: background-color 0.3s, color 0.3s;
@@ -297,6 +298,7 @@ select {
     &--img {
       width: 8px;
       height: 8px;
+      pointer-events: none;
     }
   }
 
