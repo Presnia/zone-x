@@ -15,7 +15,7 @@ vars.$hideFilters.addEventListener('click', (e) => {
 const createChoiceItem = (text) => {
   return (
     `
-    <button class="btn-reset catalog-choice__item">
+    <button class="btn-reset catalog-choice__item" data-choice-text="${text}">
         ${text}
         <img class="catalog-choice__item--img" src="../img/close.svg" alt="">
       </button>
@@ -35,6 +35,10 @@ vars.$catalogFilterItems.forEach(el => {
 
       } else {
         el.querySelector('.custom-checkbox').classList.remove('custom-checkbox--active');
+
+        let text = el.querySelector('.custom-checkbox__text').textContent;
+
+        document.querySelector(`[data-choice-text="${text}"]`).remove();
       }
 
       let activeCheckboxes = document.querySelectorAll('.custom-checkbox--active');
