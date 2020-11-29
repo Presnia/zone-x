@@ -174,7 +174,6 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid red;
   }
 
   &__item {
@@ -252,9 +251,9 @@ select {
     padding: 0 5px;
     color: var(--color-gray);
 
-    &:hover {
+    /* &:hover {
       color: var(--color-dark);
-    }
+    } */
 
     &--current {
       font-size: 10px; 
@@ -277,6 +276,7 @@ select {
 }
 
 .catalog-choice {
+  display: none; 
   font-size: 0;
 
   &__item {
