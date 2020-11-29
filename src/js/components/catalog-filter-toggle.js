@@ -25,7 +25,6 @@ const createChoiceItem = (text) => {
 
 vars.$catalogFilterItems.forEach(el => {
     el.querySelector('input').addEventListener('change', (e) => {
-      console.log(el.querySelector('input'))
       let checked = el.querySelector('input').checked;
 
       if (checked) {
@@ -39,7 +38,6 @@ vars.$catalogFilterItems.forEach(el => {
       }
 
       let activeCheckboxes = document.querySelectorAll('.custom-checkbox--active');
-      console.log(activeCheckboxes);
 
       if (activeCheckboxes.length > 0) {
         vars.$catalogChoice.style.display = 'block';
