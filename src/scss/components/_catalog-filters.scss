@@ -222,10 +222,6 @@
   }
 }
 
-select {
-  display: none;
-}
-
 .catalog-columns {
   display: flex;
   align-items: center;
@@ -323,5 +319,71 @@ select {
   &--img {
     width: 8px;
     height: 8px;
+  }
+}
+
+.custom-select {
+  position: relative;
+  min-width: 115px;
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 2px);
+    z-index: 20;
+    padding: 12px;
+    font-size: 12px;
+    width: 100%;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__top {
+    position: relative;
+    border-bottom: 1px solid #e5e5e7;
+    padding-right: 32px;
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 28%;
+      width: 10px;
+      height: 6px;
+      background-image: url("../../img/angle-down.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: var(--color-gray);
+      transform: translateY(-50%);
+    }
+  }
+
+  &--open {
+    .custom-select__top {
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    .custom-select__dropdown {
+      display: block;
+    }
   }
 }

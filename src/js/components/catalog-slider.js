@@ -5,7 +5,7 @@ const catalogSlider = new Swiper (vars.$catalogSlider, {
   loop: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: '.hero-next-btn',
-    prevEl: '.hero-prev-btn',
+    nextEl: '.hero-prev-btn',
+    prevEl: '.hero-next-btn',
   },
 });
