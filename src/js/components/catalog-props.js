@@ -22,8 +22,15 @@ vars.$customSelect.forEach(el => {
 
     if (e.target.classList.contains('custom-select__item')) {
       let text = e.target.textContent;
-      
       e.currentTarget.querySelector('.custom-select__top').textContent = text;
     }
-  })
+  });
+
+  el.addEventListener('focus', (e) => {
+    e.currentTarget.classList.add('custom-select--open');
+  });
+
+  el.addEventListener('blur', (e) => {
+    e.currentTarget.classList.remove('custom-select--open');
+  });
 });
