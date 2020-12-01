@@ -2,12 +2,18 @@
     padding-top: 130px;
 
   &__slider {
+    position: relative;
     overflow: hidden;
     width: 100%;
     background-color: #f8f8f8;
     background-image: url("../../img/girl-catalog.png");
     background-repeat: no-repeat;
     background-position: 77%;
+  }
+
+  &__container {
+    position: relative;
+
   }
 }
 
@@ -57,6 +63,39 @@
       background-color: transparent;
     }
   }
+}
 
+.hero-prev-btn,
+.hero-next-btn {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-dark);
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-white);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
   
+  img {
+    width: 20px;
+  }
+
+  &:hover {
+    background-color: var(--color-dark);
+  }
+}
+
+.hero-next-btn {
+  left: auto;
+  right: 30px;
+  background-color: var(--color-dark);
+
+  &:hover {
+    background-color: var(--color-white);
+  }
 }
