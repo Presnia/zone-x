@@ -341,11 +341,15 @@
 
   &__item {
     cursor: pointer;
-  }
+    transition: color 0.3s;
 
-  &__item {
     &:not(:last-child) {
       margin-bottom: 10px;
+    }
+
+    &:hover {
+      color: var(--color-tundora);
+      transition: color 0.3s;
     }
   }
 
