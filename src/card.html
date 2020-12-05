@@ -9,20 +9,13 @@
 	<title>New site</title>
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
+<body class="card-page">
 	<div class="site-container">
 		@include('html/header-catalog.html')
 		<main class="main">
-			@include('html/hero-catalog.html')
-			<section class="catalog">
-				<h2 class="visually-hidden">Catalog</h2>
+			<section class="card">
+				<h2 class="visually-hidden">Product Card</h2>
 				@include('html/breadcrumbs.html')
-				<div class="catalog-content">
-					<div class="container container-narrow">
-            @include('html/catalog-filter.html')
-						@include('html/catalog-grid.html')
-					</div>
-				</div>
 			</section>
 		</main>
 		@include('html/footer-2.html')
