@@ -392,6 +392,22 @@
     }
   }
 
+  &--footer {
+    min-width: auto;
+    
+    .custom-select__top {
+      border-bottom: none;
+      padding-bottom: 0;
+      padding-right: 15px;
+      font-size: 13px;
+      font-weight: 400;
+
+      &::after {
+        margin-top: 3px;
+      }
+    }
+  }
+
   &--open {
     .custom-select__top {
       &::after {
