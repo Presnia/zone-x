@@ -33,3 +33,26 @@
 .catalog-header {
   padding-top: 37px;
 }
+
+.free-delivery {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: #111;
+  z-index: 120;
+
+  &__btn {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
