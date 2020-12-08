@@ -289,3 +289,35 @@
     color: var(--color-dark);
   }
 }
+
+.card-bottom {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  span {
+    color: var(--color-gray);
+  }
+
+  a {
+    color: var(--color-dark);
+
+    &:hover {
+      color: var(--color-gray);
+    }
+  }
+
+  &__social {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 12px;
+    }
+  }
+}

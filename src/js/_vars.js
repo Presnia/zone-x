@@ -17,4 +17,6 @@ export default {
   $colorSelect: document.querySelector('.color-select'),
   $sizeSelect: document.querySelector('.size-select'),
   $stepper: document.querySelector('.stepper'),
+  $cardSliderThumbs: document.querySelector('.card-slider__thumbs'),
+  $sliderImg: document.querySelector('.card-slider__main img'),
 }
