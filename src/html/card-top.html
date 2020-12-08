@@ -41,7 +41,7 @@
           <div class="info-price__old">$165.00</div>
         </div>
         <p class="card-info__descr">We love the dramatic ruffle details down the sleeve, delicate fabric buttons and polished cuffs.</p>
-        <div class="card-info__select color-select">
+        <div class="card-info__select card-info__first-select color-select">
           <p class="color-select__selected">Color: <span>Green</span></p>
           <ul class="color-select__list">
             <li class="color-select__item"><button class="color-select__btn btn-reset" aria-label="Choice red color" style="background-color: red;" data-color="red"></button></li>
@@ -54,7 +54,7 @@
             <li class="color-select__item"><button class="color-select__btn btn-reset" aria-label="Choice gray color" style="background-color: gray;" data-color="gray"></button></li>
           </ul>
         </div>
-        <div class="card-info__select size-select">
+        <div class="card-info__select size-select card-info__second-select">
           <p class="size-select__selected">Size: <span>Select a size</span></p>
           <ul class="size-select__list">
             <li class="size-select__item"><button class="size-select__btn btn-reset" aria-label="Choice 23 size">23</button></li>
@@ -72,7 +72,51 @@
             Clear
           </button>
         </div>
+        <div class="card-info__stepper stepper">
+          <button class="btn-reset stepper__btn stepper__btn--minus stepper__btn--disabled" aria-label="minus">
+            <img src="../img/minus-btn.png" alt="">
+          </button>
+          <input type="text" class="stepper__input" value="1" maxlength="5">
+          <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="plus">
+            <img src="../img/plus-btn.png" alt="">
+          </button>
+        </div>
+        <button class="btn-reset card-info__btn card-info__btn--tocart">Add to cart</button>
+        <button class="btn-reset card-info__btn card-info__btn--wishlist">Add to wishlist</button>
+        <div class="card-info__bottom card-bottom">
+          <div class="card-bottom__item">
+            <span>Sku:</span>
+            FW511
+          </div>
+          <div class="card-bottom__item">
+            <span>Category:</span>
+            <a href="#">Trousers,</a> 
+            <a href="#">Life style</a> 
+          </div>
+          <div class="card-bottom__item">
+            <span>Tags:</span>
+            <a href="#">Designer,</a> 
+            <a href="#">Women</a>
+          </div>
+          <div class="card-bottom__social">
+            <span>Share:</span>
+            <ul class="social footer__social">
+						<li class="social__item">
+							<a href="#" class="social__link social__link--tw" aria-label="Go to twitter"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--fb" aria-label="Go to facebook"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--in" aria-label="Go to instagram"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--pin" aria-label="Go to pinterest"></a>
+						</li>
+					</ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</div> 

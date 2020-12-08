@@ -16,4 +16,5 @@ export default {
   $freeDeliveryBtn: document.querySelector('.free-delivery__btn'),
   $colorSelect: document.querySelector('.color-select'),
   $sizeSelect: document.querySelector('.size-select'),
+  $stepper: document.querySelector('.stepper'),
 }
